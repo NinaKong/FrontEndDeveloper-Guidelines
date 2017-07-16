@@ -1,2 +1,2 @@
-# Front-end-developer-guidelines
+# Front-End-Developer-guidelines
 A guidelines of Front End Developer
