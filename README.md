@@ -15,7 +15,7 @@ Front End Developer's Basic Guidelines
    ```
    pseudo-class:
    ```  
-   a:link,a:visited
+   a:link, a:visited
    ```
    pseudo-element selector: 
    ```
@@ -23,3 +23,27 @@ Front End Developer's Basic Guidelines
    ```
   
 2) Cascade
+   - Importance
+   ```
+   <div class="movie" id="starwars">Star Wars</div>
+   ```
+   ```
+   #starwars {
+     border: 1px solid #000000;
+   }
+   .movie {
+     border: none !important;
+   }
+   ```
+   - Specificity
+   - Source order
+   ```
+   p {
+      color: #000000;
+   }
+
+   /* This will win over the first one */
+   p {
+     color: #cccccc;
+   }
+   ```
