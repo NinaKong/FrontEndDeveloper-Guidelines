@@ -42,6 +42,6 @@ Front End Developer's Basic Guidelines
       color: #000000;
    }
    p {
-     color: #cccccc;
+      color: #cccccc;
    }
    ```
