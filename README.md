@@ -5,7 +5,7 @@ Front End Developer's Basic Guidelines
   - [HTML](#html)
   - [CSS](#css)
   - [Javascript](#javascript)
-  - [Image](#image)
+  - [Cross Browser Compatible](#cross-browser-compatible)
   
 ## CSS
 1) Specificity  
@@ -45,3 +45,5 @@ Front End Developer's Basic Guidelines
       color: #cccccc;
    }
    ```
+   
+ ## Cross Browser Compatible
