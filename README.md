@@ -47,3 +47,24 @@ Front End Developer's Basic Guidelines
    ```
    
  ## Cross Browser Compatible
+ 
+ 1) IE 8 
+    a) HTML
+       - Some of the new elements that HTML5 includes that IE8 doesn’t support
+       ```
+       section, article, nav, header, footer, aside, and canvas
+       ```
+       ```
+       header, section, footer, aside, nav, main, article, figure {
+          display: block; 
+       }
+       ```
+    b) CSS
+       - No media queries
+       - No keyframes
+       - Do not support transform or transition
+       - No nth-of-type or nth-child selectors
+       - Bootstrap do not support IE8
+    c) Javascript
+       - Angular, React – none of the most recent versions of any of these support IE8
+ 
