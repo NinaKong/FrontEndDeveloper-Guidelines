@@ -41,8 +41,6 @@ Front End Developer's Basic Guidelines
    p {
       color: #000000;
    }
-
-   /* This will win over the first one */
    p {
      color: #cccccc;
    }
