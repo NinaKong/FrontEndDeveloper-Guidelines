@@ -56,6 +56,7 @@ Front End Developer's Basic Guidelines
    -ms- /* Internet Explorer (but not always) */
    ```
 2) Reset - use [normalize.css](http://necolas.github.io/normalize.css/) 
+
 3） Box Model - avoid padding with widths
    ```
    * { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
