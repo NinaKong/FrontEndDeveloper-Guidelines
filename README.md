@@ -55,6 +55,7 @@ Front End Developer's Basic Guidelines
    -o- /* Opera */
    -ms- /* Internet Explorer (but not always) */
    ```
+
 2) Reset - use [normalize.css](http://necolas.github.io/normalize.css/) 
 
 3）Box Model - avoid padding with widths
@@ -63,6 +64,7 @@ Front End Developer's Basic Guidelines
    -moz-box-sizing: border-box; /* Firefox, other Gecko */
    box-sizing: border-box; }
    ```
+   
 4) Clear floats
    ```
    .clearfix:after { 
@@ -73,8 +75,6 @@ Front End Developer's Basic Guidelines
       clear: both;
    }
    ```
-
-
  
 ## IE 8 
     
