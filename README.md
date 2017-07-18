@@ -60,9 +60,11 @@ Front End Developer's Basic Guidelines
 
 3）Box Model - avoid padding with widths
    ```
-   * { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-   -moz-box-sizing: border-box; /* Firefox, other Gecko */
-   box-sizing: border-box; }
+   * { 
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box; /* Firefox, other Gecko */
+      box-sizing: border-box; 
+   }
    ```
    
 4) Clear floats
