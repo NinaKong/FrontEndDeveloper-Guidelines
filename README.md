@@ -48,7 +48,7 @@ Front End Developer's Basic Guidelines
    ```
    
 ## Cross Browser Compatible
-1) Prefix css3 styles
+1) Prefix CSS styles
    ```
    -moz- /* Firefox and other browsers using Mozilla's browser engine */
    -webkit- /* Safari, Chrome and browsers using the Webkit engine */
@@ -56,17 +56,8 @@ Front End Developer's Basic Guidelines
    -ms- /* Internet Explorer (but not always) */
    ```
 
-2) Reset - use [normalize.css]
-
-3）Box Model - avoid padding with widths
-   ```
-   * { 
-      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-      -moz-box-sizing: border-box; /* Firefox, other Gecko */
-      box-sizing: border-box; 
-   }
-   ```
-   
+2) Reset - use [normalize.css](http://necolas.github.io/normalize.css/) 
+ 
 4) Clear floats
    ```
    .clearfix:after { 
@@ -77,6 +68,15 @@ Front End Developer's Basic Guidelines
       clear: both;
    }
    ```
+3）Box Model - avoid padding with widths
+   ```
+   * { 
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box; /* Firefox, other Gecko */
+      box-sizing: border-box; 
+   }
+   ```
+  
  
 ## IE 8 
     
