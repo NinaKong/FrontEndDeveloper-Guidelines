@@ -24,7 +24,8 @@ Front End Developer's Basic Guidelines
    ```
   
 2) Cascade
-   - Importance
+   
+   a) Importance
    ```
    <div class="movie" id="starwars">Star Wars</div>
    ```
@@ -36,8 +37,10 @@ Front End Developer's Basic Guidelines
      border: none !important;
    }
    ```
-   - Specificity
-   - Source order
+   
+   b) Specificity
+   
+   c)Source order
    ```
    p {
       color: #000000;
@@ -69,7 +72,15 @@ Front End Developer's Basic Guidelines
    }
    ```
    
-4）Box Model - avoid padding with widths
+
+   ```
+   * { 
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box; /* Firefox, other Gecko */
+      box-sizing: border-box; 
+   }
+   ```
+ 
  
  
 ## IE 8 
