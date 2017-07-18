@@ -56,7 +56,7 @@ Front End Developer's Basic Guidelines
    -ms- /* Internet Explorer (but not always) */
    ```
 
-2) Reset - use [normalize.css](http://necolas.github.io/normalize.css/) 
+2) Reset - use [normalize.css]
 
 3）Box Model - avoid padding with widths
    ```
