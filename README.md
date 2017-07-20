@@ -7,6 +7,7 @@ Front End Developer's Basic Guidelines
   - [Javascript](#javascript)
   - [Cross Browser Compatible](#cross-browser-compatible)
   - [IE 8](#ie-8)
+  - [Code Standards](#code-standards)
   
 ## CSS
 1) Specificity  
@@ -106,3 +107,9 @@ Front End Developer's Basic Guidelines
 3) Javascript
    - Angular, React – none of the most recent versions of any of these support IE8
  
+## Code Standards
+1) Progressive Enhancement
+2) Team members keep consistency and conventions
+3) Solutions should be as simple and clear as possible
+4) Readable code is critical
+5) Avoid in-line styles and in-line JavaScript whenever possible
