@@ -50,6 +50,12 @@ Front End Developer's Basic Guidelines
       color: #cccccc;
    }
    ```
+3) Box Model: content, padding, border, and margin
+   - Content: The text or image content of the box
+   - Padding: an area around the content
+   - Border: A border that goes around the padding and content
+   - Margin: an area outside the border
+   Note: The padding and margin are transparent
    
 ## Cross Browser Compatible
 1) Prefix CSS styles
