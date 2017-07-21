@@ -55,6 +55,7 @@ Front End Developer's Basic Guidelines
    - Padding: an area around the content
    - Border: A border that goes around the padding and content
    - Margin: an area outside the border
+   
    Note: The padding and margin are transparent
    
 ## Cross Browser Compatible
