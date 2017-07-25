@@ -62,7 +62,8 @@ Front End Developer's Basic Guidelines
    ```
    display: inline;
    ```
-   The elements like <span>, <em>, or <b>. margin-top, margin-bottom, padding-top, padding-bottom, width, and heigh will not work.
+   The elements like ```<span>```, ```<em>```, or ```<b>```. 
+   margin-top, margin-bottom, padding-top, padding-bottom, width, and heigh will not work.
    ```
    display: inline-block;
    ```
