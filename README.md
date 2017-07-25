@@ -16,6 +16,11 @@ Front End Developer's Basic Guidelines
    ```
    The  ```<!DOCTYPE> ``` is not an HTML tag, it lets the web browser know the HTML version in the web page. It is the first thing in the HTML file.
 
+2）Favorite HTML5 Feature
+    - Audio and Video
+    - Section
+    - Heeader and Footer
+    - Nav
 
 ## CSS
 1) Specificity  
@@ -77,7 +82,12 @@ Front End Developer's Basic Guidelines
    ```
    margin-top, margin-bottom, padding-top, padding-bottom, width, and heigh will be respected.
    
-   
+ 5）Favorite CSS3 Feature
+    - Webfonts
+    - Media Query
+    - Multile Backgrounds
+    - Box Shadows
+   
 ## Javascript
 1) Scope: Local and Global
 
