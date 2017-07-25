@@ -58,6 +58,17 @@ Front End Developer's Basic Guidelines
    
    Note: The padding and margin are transparent
    
+4) Display
+   ```
+   display: inline;
+   ```
+   The elements like <span>, <em>, or <b>. margin-top, margin-bottom, padding-top, padding-bottom, width, and heigh will not work.
+   ```
+   display: inline-block;
+   ```
+   margin-top, margin-bottom, padding-top, padding-bottom, width, and heigh will be respected.
+   
+   
 ## Javascript
 1) Scope: Local and Global
 
