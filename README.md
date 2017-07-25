@@ -8,7 +8,15 @@ Front End Developer's Basic Guidelines
   - [Cross Browser Compatible](#cross-browser-compatible)
   - [IE 8](#ie-8)
   - [Code Standards](#code-standards)
-  
+
+## HTML
+1) Doctype
+   ```
+   <!DOCTYPE html>
+   ```
+   The  ```<!DOCTYPE> ``` is not an HTML tag, it lets the web browser know the HTML version in the web page. It is the first thing in the HTML file.
+
+
 ## CSS
 1) Specificity  
    Style attribute from most to least：
