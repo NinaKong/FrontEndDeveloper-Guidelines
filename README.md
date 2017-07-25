@@ -58,6 +58,10 @@ Front End Developer's Basic Guidelines
    
    Note: The padding and margin are transparent
    
+## Javascript
+1) Scope: Local and Global
+
+
 ## Cross Browser Compatible
 1) Prefix CSS styles
    ```
