@@ -92,10 +92,13 @@ Front End Developer's Basic Guidelines
 1) Scope: Local and Global
 2) Asynchronous JavaScript And XML (AJAX): is a way to communicate to the server without reloading the page. It uses ```XMLHttpRequest``` to communicate to a server-side script to retrieve data formatted in JSON, XML, HTML, or plain text. 
    - Advantages
+     
      a) Reduce the traffic travels between the client and the server
+     
      b) Increases performance and speed with faster response time
      
    - Disadvantages
+     
      a) Increase design and development time
 
 
