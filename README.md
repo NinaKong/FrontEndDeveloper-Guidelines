@@ -100,7 +100,15 @@ Front End Developer's Basic Guidelines
    - Disadvantages
      
      a) Increase design and development time
-
+3) Basic Knowlege: use for widgets
+   - Dropdown
+   ```
+   function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show");
+   }
+   ```
+   ```classList```: returns the class name(s) of an element, it is useful to add, remove and toggle CSS classes on an element.
+   ```toggle```: between hiding and showing an element.
 
 ## Cross Browser Compatible
 1) Prefix CSS styles
