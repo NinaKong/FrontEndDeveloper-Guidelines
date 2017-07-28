@@ -108,8 +108,25 @@ Front End Developer's Basic Guidelines
    }
    ```
    ```classList```: returns the class name(s) of an element, it is useful to add, remove and toggle CSS classes on an element.
+   
    ```toggle```: between hiding and showing an element.
 
+   - Tab
+   ```
+   event.currentTarget.className += " active";
+   ```   
+   ```   
+   <body onclick="targetFunction(event)">
+
+      <p>current target</p>
+
+      <p><strong>Note:</strong> only target</p>
+   </body>
+   ```   
+   ```currentTarget```: returns the element whose event listeners triggered the event, even though it is useful during capturing and bubbling. In the example above, it will only return body, even though you click <p> or <strong> tag.
+   
+   ```target```: returns the element that triggered the event. In the example above, it will return the event you triggered.
+   
 ## Cross Browser Compatible
 1) Prefix CSS styles
    ```
