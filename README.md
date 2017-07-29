@@ -129,6 +129,8 @@ Front End Developer's Basic Guidelines
    - Accordions  
    ```nextElementSibling```: returns the element immediately following the specified element
 
+4) Traverse DOM
+
 ## Cross Browser Compatible
 1) Prefix CSS styles
    ```
