@@ -185,6 +185,34 @@ Front End Developer's Basic Guidelines
      ```document.getElementById("example").previousSibling.innerHTML;```
    
 
+5) Loop 
+   - ```for```: loops through a block of code a number of times
+   ```
+     for (i = 0; i < cars.length; i++) { 
+        //
+     }
+   ```
+   
+   - ```.map()```: creates a new array with the results of calling a function for every array element.
+   ```
+      var arr = [25, 64, 81, 100];
+      function myFunction() {
+        document.getElementById("example").innerHTML = arr.map(Math.sqrt);
+      }
+   ```
+   
+   - ```.filter()```: creates an array filled with all array elements that pass a test (provided as a function).
+   ```
+      var scores = [32, 63, 76, 90];
+
+      function checkScores(score) {
+          return score >= 60;
+      }
+
+      function myFunction() {
+          document.getElementById("example").innerHTML = scores.filter(checkScores);
+      }
+   ```
 ## Cross Browser Compatible
 1) Prefix CSS styles
    ```
@@ -254,11 +282,11 @@ Front End Developer's Basic Guidelines
    - Step 1. Type URL in the browser
    - Step 2. If requested object is in browser cache and is fresh, move on to Step  8.
    - Step 3. Domain Name System (DNS) lookup to find the ip address of the server
-   - Step 4. Browser initiates a TCP connection with the server.
+   - Step 4. Browser initiates a Transmission Control Protocol (TCP) connection with the server.
    - Step 5. Browser sends a HTTP request to the server.
    - Step 6. Server handles the incoming request
    - Step 7. Browser receives the HTTP response
    - Step 8. Browsers displays the html content
    - Step 9. Client interaction with server
-   - Step 10. AJAX queries
+
 
