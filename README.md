@@ -148,30 +148,30 @@ Front End Developer's Basic Guidelines
      
    - Traverse up and down
    
-     ```
-     parentNode
-     ```
      
-     ```
-     childNodes[nodenumber]
-     ```
+     ```parentNode```: returns the parent node of the specified node, as a Node object.
      
-     ```
-     firstChild
-     ```
+     ```document.getElementById("example").parentNode.nodeName;```
      
-     ```
-     lastChild
-     ```
      
-     - Traverse left and right
+     ```childNodes[nodenumber]```:returns a collection of a node's child nodes, as a NodeList object.
+     ```document.getElementById("example").childNodes[2].text;
      
-     ```
-     nextSibling
-     ```
-     ```
-     previousSibling
-     ```
+     
+     ```firstChild```: returns the first child node of the specified node, as a Node object.
+
+     ```document.getElementById("example").firstChild.innerHTML;```
+     
+     ```lastChild```:returns the last child node of the specified node, as a Node object.
+     ```document.getElementById("example").lastChild.innerHTML;```
+     
+   - Traverse left and right
+         
+     ```nextSibling```: returns the node immediately following the specified node, in the same tree level.
+     ```document.getElementById("example").nextSibling.innerHTML;```
+       
+     ```previousSibling```: returns the previous node of the specified node, in the same tree level.
+     ```document.getElementById("example").previousSibling.innerHTML;```
    
 
 ## Cross Browser Compatible
