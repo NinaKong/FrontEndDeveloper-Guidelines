@@ -130,31 +130,42 @@ Front End Developer's Basic Guidelines
    ```nextElementSibling```: returns the element immediately following the specified element
 
 4) Traverse DOM
+   
    - Select and find nodes
+     
      ```querySelector```: returns the first element that matches a specified CSS selector(s) in the document
      
      ```document.querySelector(".example");```
+     
      
      ```querySelectorAll```: returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object.
      
      ```document.querySelectorAll(".example");```
      
+     
      ```getElementsByClassName```: returns a collection of all elements in the document with the specified class name, as a NodeList object.
      ```document.getElementsByClassName("example");```
      
-   - Navigating Nodes
+   - Traverse up and down
+   
      ```
      parentNode
      ```
+     
      ```
      childNodes[nodenumber]
      ```
+     
      ```
      firstChild
      ```
+     
      ```
      lastChild
      ```
+     
+     - Traverse left and right
+     
      ```
      nextSibling
      ```
