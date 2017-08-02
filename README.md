@@ -8,6 +8,7 @@ Front End Developer's Basic Guidelines
   - [Cross Browser Compatible](#cross-browser-compatible)
   - [IE 8](#ie-8)
   - [Code Standards](#code-standards)
+  - [Network](#network)
 
 ## HTML
 1) Doctype
@@ -246,3 +247,18 @@ Front End Developer's Basic Guidelines
 3) Solutions should be as simple and clear as possible
 4) Readable code is critical
 5) Avoid in-line styles and in-line JavaScript whenever possible
+
+## Network
+1) [Type a URL in browser](http://edusagar.com/articles/view/70/What-happens-when-you-type-a-URL-in-browser)
+
+   - Step 1. Type URL in the browser
+   - Step 2. If requested object is in browser cache and is fresh, move on to Step  8.
+   - Step 3. Domain Name System (DNS) lookup to find the ip address of the server
+   - Step 4. Browser initiates a TCP connection with the server.
+   - Step 5. Browser sends a HTTP request to the server.
+   - Step 6. Server handles the incoming request
+   - Step 7. Browser receives the HTTP response
+   - Step 8. Browsers displays the html content
+   - Step 9. Client interaction with server
+   - Step 10. AJAX queries
+
