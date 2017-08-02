@@ -130,6 +130,26 @@ Front End Developer's Basic Guidelines
    ```nextElementSibling```: returns the element immediately following the specified element
 
 4) Traverse DOM
+   - Navigating Nodes
+     ```
+     parentNode
+     ```
+     ```
+     childNodes[nodenumber]
+     ```
+     ```
+     firstChild
+     ```
+     ```
+     lastChild
+     ```
+     ```
+     nextSibling
+     ```
+     ```
+     previousSibling
+     ```
+   
 
 ## Cross Browser Compatible
 1) Prefix CSS styles
