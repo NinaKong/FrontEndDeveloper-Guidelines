@@ -213,6 +213,70 @@ Front End Developer's Basic Guidelines
           document.getElementById("example").innerHTML = scores.filter(checkScores);
       }
    ```
+   
+6) [Hoisting](http://adripofjavascript.com/blog/drips/variable-and-function-hoisting)
+   
+   - Variables
+   ```
+      // Outputs: undefined
+      console.log(declaredLater);
+
+      var declaredLater = "Now it's defined!";
+
+      // Outputs: "Now it's defined!"
+      console.log(declaredLater);
+   ```
+   
+   is equal to:
+   
+   ```
+      var declaredLater;
+
+      // Outputs: undefined
+      console.log(declaredLater);
+
+      declaredLater = "Now it's defined!";
+
+      // Outputs: "Now it's defined!"
+      console.log(declaredLater);
+   ```
+   
+   - Functions
+   ```
+      // Outputs: "Yes!"
+      isItHoisted();
+
+      function isItHoisted() {
+        console.log("Yes!");
+      }
+   ```
+   is equal to:
+   
+   ```
+      // Outputs: "Yes!"
+      function isItHoisted() {
+        console.log("Yes!");
+      }
+      isItHoisted();
+   ```
+   
+   
+   Note: function definition hoisting only occurs for function declarations, not function expressions. 
+   ```    
+      // Outputs: "Definition hoisted!"
+      definitionHoisted();
+
+      // TypeError: undefined is not a function
+      definitionNotHoisted();
+
+      function definitionHoisted() {
+        console.log("Definition hoisted!");
+      }
+
+      var definitionNotHoisted = function () {
+        console.log("Definition not hoisted!");
+      };
+    ```
 ## Cross Browser Compatible
 1) Prefix CSS styles
    ```
