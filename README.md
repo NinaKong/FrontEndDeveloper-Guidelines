@@ -253,10 +253,10 @@ Front End Developer's Basic Guidelines
    is equal to:
    
    ```
-      // Outputs: "Yes!"
       function isItHoisted() {
         console.log("Yes!");
       }
+      // Outputs: "Yes!"
       isItHoisted();
    ```
    
@@ -277,6 +277,35 @@ Front End Developer's Basic Guidelines
         console.log("Definition not hoisted!");
       };
     ```
+    
+7) Function Declarations and Function Expressions
+
+   - Function Declarations: named function variable without requiring variable assignment
+   
+   ```
+      function bar() {
+        return 5;
+      }
+   ```
+   
+   - Function Expressions: a function as a part of an variable assignment
+   
+   ```
+      //anonymous function expression
+      var a = function () {
+        return 5;
+      }
+      //named function expression
+      var a = function bar() {
+        return 5;
+      }
+      //self invoking function expression
+      (function sayHelloWorld() {
+          alert("hello world!");
+      })();
+   ```
+
+
 ## Cross Browser Compatible
 1) Prefix CSS styles
    ```
