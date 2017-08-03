@@ -88,7 +88,50 @@ Front End Developer's Basic Guidelines
     - Media Query
     - Multile Backgrounds
     - Box Shadows
-   
+
+6) [Clear Float](https://css-tricks.com/all-about-floats/)
+  
+  - Collapse
+     ```
+     overflow: hidden;
+     ```
+     If parent element only contained floated elements, the height would be collapsed. If there is no background color, it will not be obvious.
+   
+   - .clearfix
+     ```
+     .clearfix:after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+     }
+     ```
+     
+ 7) CSS preprocessor
+    - Nesting
+    - Variables
+    - Math Function
+      ```
+         .medium {
+             padding: @base-padding * 1.5;
+         }
+     ```
+    - Operational Functions
+       ```
+          p{
+              color: darken(@primary-color);
+          }
+       ```
+     - Mixins: reusable
+     - Separate your code to different files
+       ```
+          @import “variables.less”;
+          @import “mixins.less”;
+          @import “buttons.less”;
+          @import “site.less”;
+       ```
+   
 ## Javascript
 1) Scope: Local and Global
 2) Asynchronous JavaScript And XML (AJAX): is a way to communicate to the server without reloading the page. It uses ```XMLHttpRequest``` to communicate to a server-side script to retrieve data formatted in JSON, XML, HTML, or plain text. 
