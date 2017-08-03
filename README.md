@@ -83,7 +83,8 @@ Front End Developer's Basic Guidelines
    ```
    margin-top, margin-bottom, padding-top, padding-bottom, width, and heigh will be respected.
    
- 5）Favorite CSS3 Feature
+5）Favorite CSS3 Feature
+
     - Webfonts
     - Media Query
     - Multile Backgrounds
@@ -97,7 +98,7 @@ Front End Developer's Basic Guidelines
      ```
      If parent element only contained floated elements, the height would be collapsed. If there is no background color, it will not be obvious.
    
-   - .clearfix
+   - Clearfix
      ```
      .clearfix:after {
         content: ".";
@@ -108,7 +109,7 @@ Front End Developer's Basic Guidelines
      }
      ```
      
- 7) CSS preprocessor
+7) CSS preprocessor
     - Nesting
     - Variables
     - Math Function
@@ -116,21 +117,23 @@ Front End Developer's Basic Guidelines
          .medium {
              padding: @base-padding * 1.5;
          }
-     ```
+      ```
     - Operational Functions
-       ```
+      ```
           p{
               color: darken(@primary-color);
           }
-       ```
-     - Mixins: reusable
-     - Separate your code to different files
-       ```
+      ```
+    
+    - Mixins: reusable
+    
+    - Separate your code to different files
+      ```
           @import “variables.less”;
           @import “mixins.less”;
           @import “buttons.less”;
           @import “site.less”;
-       ```
+      ```
    
 ## Javascript
 1) Scope: Local and Global
