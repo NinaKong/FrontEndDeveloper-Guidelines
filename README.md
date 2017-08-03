@@ -178,8 +178,42 @@ Front End Developer's Basic Guidelines
    - Accordions  
    ```nextElementSibling```: returns the element immediately following the specified element
 
-
-
+4) Asynchronous JavaScript And XML(AJAX)
+   - combination of: A browser built-in XMLHttpRequest object (to request data from a web server)
+JavaScript and HTML DOM (to display or use the data)
+   - Update a web page without reloading the page
+   - Request data from a server - after the page has loaded
+   - Receive data from a server - after the page has loaded
+   - Send data to a server - in the background
+   ```
+      var data = new XMLHttpRequest();
+      data.open("GET", "http://api.wunderground.com/api/0def10027afaebb7/conditions/q/FL/Boca_Raton.json", true);
+      //http://stackoverflow.com/questions/16592709/using-javascript-to-add-custom-http-header-and-trigger-file-download
+      data.setRequestHeader('Authorization', 'token');
+      data.setRequestHeader('Content-Type', 'application/json');
+      data.setRequestHeader('Accept-Encoding', 'application/json');
+      //The onload event occurs when an object has been loaded.
+      data.onload = function() {
+          if (data.status === 200) {
+              alert('Request success');
+          }
+          else {
+              alert('Request failed.  Returned status of ' + data.status);
+          }
+      };
+      data.send();
+      var results = JSON.parse(data.response);
+      var weather = "Location:" + results.current_observation.display_location.full;
+      var temp = "Temperature:" + results.current_observation.temperature_string;
+      var state = "State:" + results.current_observation.icon;
+      getWeather("weather", weather);
+      getWeather("temp", temp);
+      getWeather("state", state);
+      function getWeather(arg1, arg2) {
+          document.getElementById(arg1).innerHTML = arg2;
+      }
+   ```
+   
 5) Loop 
    - ```for```: loops through a block of code a number of times
    ```
