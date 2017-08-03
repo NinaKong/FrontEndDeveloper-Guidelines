@@ -370,14 +370,22 @@ Front End Developer's Basic Guidelines
 9) [Promise](https://davidwalsh.name/promises) and (https://scotch.io/tutorials/javascript-promises-for-dummies)
 
    - States
+   
      a) Pending: it can transition to the fulfilled or rejected state
+     
      b) Fulfilled (resolve() was called)
+     
      c) Rejected (rejected() was called)
+     
  
    - Usage:
+   
      a) setTimeout
+     
      b) XMLHttpRequest
+     
      c) provide resolve and reject
+     
       ``` 
           var p = new Promise(function(resolve, reject) {
 
