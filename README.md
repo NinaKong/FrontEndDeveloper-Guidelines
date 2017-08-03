@@ -83,16 +83,17 @@ Front End Developer's Basic Guidelines
    ```
    margin-top, margin-bottom, padding-top, padding-bottom, width, and heigh will be respected.
    
-5）Favorite CSS3 Feature
+5) Favorite CSS3 Feature
 
     - Webfonts
     - Media Query
     - Multile Backgrounds
     - Box Shadows
 
+
 6) [Clear Float](https://css-tricks.com/all-about-floats/)
   
-  - Collapse
+   - Collapse
      ```
      overflow: hidden;
      ```
