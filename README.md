@@ -305,6 +305,21 @@ Front End Developer's Basic Guidelines
       })();
    ```
 
+8) [Closure](https://www.w3schools.com/js/js_function_closures.asp): an inner function that has access to the outer (enclosing) function’s variables—scope chain
+   
+   - access to its own scope
+   
+   - access to the outer function’s variables
+   
+   - access to the global variables
+   
+   ```
+      function animal(petname) {
+          return function() {
+              return petname;
+          }
+      }
+   ```
 
 ## Cross Browser Compatible
 1) Prefix CSS styles
