@@ -179,7 +179,7 @@ Front End Developer's Basic Guidelines
    ```nextElementSibling```: returns the element immediately following the specified element
 
 4) Asynchronous JavaScript And XML(AJAX)
-   - combination of: A browser built-in XMLHttpRequest object (to request data from a web server)
+   - Combination of: A browser built-in XMLHttpRequest object (to request data from a web server)
 JavaScript and HTML DOM (to display or use the data)
    - Update a web page without reloading the page
    - Request data from a server - after the page has loaded
