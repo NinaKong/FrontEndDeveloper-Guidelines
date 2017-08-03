@@ -367,7 +367,52 @@ Front End Developer's Basic Guidelines
           }
       }
    ```
+9) [Promise](https://davidwalsh.name/promises) and (https://scotch.io/tutorials/javascript-promises-for-dummies)
 
+   - States
+     a) Pending: it can transition to the fulfilled or rejected state
+     b) Fulfilled (resolve() was called)
+     c) Rejected (rejected() was called)
+ 
+   - Usage:
+     a) setTimeout
+     b) XMLHttpRequest
+     c) provide resolve and reject
+      ``` 
+          var p = new Promise(function(resolve, reject) {
+
+              // Do an async task async task and then...
+
+              if(/* good condition */) {
+                        resolve('Success!');
+          }
+          else {
+                        reject('Failure!');
+          }
+          });
+
+          p.then(function() {
+              /* do something with the result */
+          }).catch(function() {
+              /* error :( */
+          })
+      ``` 
+      
+   - then: The then callback is triggered when the promise is resolved. 
+      ```  
+        new Promise(function(resolve, reject) {
+            // A mock async action using setTimeout
+            setTimeout(function() { resolve(10); }, 3000);
+        })
+        .then(function(result) {
+            console.log(result);
+        });
+
+        // From the console:
+        // 10
+      ```
+      
+      
 ## Cross Browser Compatible
 1) Prefix CSS styles
    ```
