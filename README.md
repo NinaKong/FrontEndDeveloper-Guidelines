@@ -5,6 +5,7 @@ Front End Developer's Basic Guidelines
   - [HTML](#html)
   - [CSS](#css)
   - [Javascript](#javascript)
+  - [DOM](#dom)
   - [Cross Browser Compatible](#cross-browser-compatible)
   - [IE 8](#ie-8)
   - [Code Standards](#code-standards)
@@ -177,60 +178,7 @@ Front End Developer's Basic Guidelines
    - Accordions  
    ```nextElementSibling```: returns the element immediately following the specified element
 
-4) Traverse DOM
-   
-   - Select and find nodes
-     
-     
-     ```querySelector```: returns the first element that matches a specified CSS selector(s) in the document
-     
-     ```document.querySelector(".example");```
-     
-     
-     
-     
-     ```querySelectorAll```: returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object.
-     
-     ```document.querySelectorAll(".example");```
-     
-     
-     
-     ```getElementsByClassName```: returns a collection of all elements in the document with the specified class name, as a NodeList object.
-     ```document.getElementsByClassName("example");```
-     
-     
-   - Traverse up and down
-   
-     
-     ```parentNode```: returns the parent node of the specified node, as a Node object.
-     
-     ```document.getElementById("example").parentNode.nodeName;```
-     
-     
-     
-     ```childNodes[nodenumber]```:returns a collection of a node's child nodes, as a NodeList object.
-     ```document.getElementById("example").childNodes[2].text;```
-     
-     
-     ```firstChild```: returns the first child node of the specified node, as a Node object.
 
-     ```document.getElementById("example").firstChild.innerHTML;```
-     
-     
-     
-     ```lastChild```:returns the last child node of the specified node, as a Node object.
-     ```document.getElementById("example").lastChild.innerHTML;```
-     
-     
-   - Traverse left and right
-         
-     ```nextSibling```: returns the node immediately following the specified node, in the same tree level.
-     ```document.getElementById("example").nextSibling.innerHTML;```
-      
-      
-     ```previousSibling```: returns the previous node of the specified node, in the same tree level.
-     ```document.getElementById("example").previousSibling.innerHTML;```
-   
 
 5) Loop 
    - ```for```: loops through a block of code a number of times
@@ -420,7 +368,62 @@ Front End Developer's Basic Guidelines
         // 10
       ```
       
+## DOM
+1) Traverse DOM
+   
+   - Select and find nodes
+     
+     
+     ```querySelector```: returns the first element that matches a specified CSS selector(s) in the document
+     
+     ```document.querySelector(".example");```
+     
+     
+     
+     
+     ```querySelectorAll```: returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object.
+     
+     ```document.querySelectorAll(".example");```
+     
+     
+     
+     ```getElementsByClassName```: returns a collection of all elements in the document with the specified class name, as a NodeList object.
+     ```document.getElementsByClassName("example");```
+     
+     
+   - Traverse up and down
+   
+     
+     ```parentNode```: returns the parent node of the specified node, as a Node object.
+     
+     ```document.getElementById("example").parentNode.nodeName;```
+     
+     
+     
+     ```childNodes[nodenumber]```:returns a collection of a node's child nodes, as a NodeList object.
+     ```document.getElementById("example").childNodes[2].text;```
+     
+     
+     ```firstChild```: returns the first child node of the specified node, as a Node object.
+
+     ```document.getElementById("example").firstChild.innerHTML;```
+     
+     
+     
+     ```lastChild```:returns the last child node of the specified node, as a Node object.
+     ```document.getElementById("example").lastChild.innerHTML;```
+     
+     
+   - Traverse left and right
+         
+     ```nextSibling```: returns the node immediately following the specified node, in the same tree level.
+     ```document.getElementById("example").nextSibling.innerHTML;```
       
+      
+     ```previousSibling```: returns the previous node of the specified node, in the same tree level.
+     ```document.getElementById("example").previousSibling.innerHTML;```
+   
+   
 ## Cross Browser Compatible
 1) Prefix CSS styles
    ```
@@ -452,7 +455,7 @@ Front End Developer's Basic Guidelines
    }
    ```
  
- 
+
  
 ## IE 8 
     
