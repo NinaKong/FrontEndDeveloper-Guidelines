@@ -139,7 +139,10 @@ Front End Developer's Basic Guidelines
    
 ## Javascript
 1) Scope: Local and Global
-2) Asynchronous JavaScript And XML (AJAX): is a way to communicate to the server without reloading the page. It uses ```XMLHttpRequest``` to communicate to a server-side script to retrieve data formatted in JSON, XML, HTML, or plain text. 
+2) Asynchronous JavaScript And XML (AJAX): is a way to communicate to the server without reloading the page. It uses         
+   
+   ```XMLHttpRequest``` to communicate to a server-side script to retrieve data formatted in JSON, XML, HTML, or plain text. 
+   
    - Advantages
      
      a) Reduce the traffic travels between the client and the server
@@ -186,154 +189,154 @@ JavaScript and HTML DOM (to display or use the data)
    - Request data from a server - after the page has loaded
    - Receive data from a server - after the page has loaded
    - Send data to a server - in the background
-   ```
-      var data = new XMLHttpRequest();
-      data.open("GET", "http://api.wunderground.com/api/0def10027afaebb7/conditions/q/FL/Boca_Raton.json", true);
-      //http://stackoverflow.com/questions/16592709/using-javascript-to-add-custom-http-header-and-trigger-file-download
-      data.setRequestHeader('Authorization', 'token');
-      data.setRequestHeader('Content-Type', 'application/json');
-      data.setRequestHeader('Accept-Encoding', 'application/json');
-      //The onload event occurs when an object has been loaded.
-      data.onload = function() {
-          if (data.status === 200) {
-              alert('Request success');
-          }
-          else {
-              alert('Request failed.  Returned status of ' + data.status);
-          }
-      };
-      data.send();
-      var results = JSON.parse(data.response);
-      var weather = "Location:" + results.current_observation.display_location.full;
-      var temp = "Temperature:" + results.current_observation.temperature_string;
-      var state = "State:" + results.current_observation.icon;
-      getWeather("weather", weather);
-      getWeather("temp", temp);
-      getWeather("state", state);
-      function getWeather(arg1, arg2) {
-          document.getElementById(arg1).innerHTML = arg2;
-      }
-   ```
+     ```
+        var data = new XMLHttpRequest();
+        data.open("GET", "http://api.wunderground.com/api/0def10027afaebb7/conditions/q/FL/Boca_Raton.json", true);
+        //http://stackoverflow.com/questions/16592709/using-javascript-to-add-custom-http-header-and-trigger-file-download
+        data.setRequestHeader('Authorization', 'token');
+        data.setRequestHeader('Content-Type', 'application/json');
+        data.setRequestHeader('Accept-Encoding', 'application/json');
+        //The onload event occurs when an object has been loaded.
+        data.onload = function() {
+            if (data.status === 200) {
+                alert('Request success');
+            }
+            else {
+                alert('Request failed.  Returned status of ' + data.status);
+            }
+        };
+        data.send();
+        var results = JSON.parse(data.response);
+        var weather = "Location:" + results.current_observation.display_location.full;
+        var temp = "Temperature:" + results.current_observation.temperature_string;
+        var state = "State:" + results.current_observation.icon;
+        getWeather("weather", weather);
+        getWeather("temp", temp);
+        getWeather("state", state);
+        function getWeather(arg1, arg2) {
+            document.getElementById(arg1).innerHTML = arg2;
+        }
+     ```
    
 5) Loop 
    - ```for```: loops through a block of code a number of times
-   ```
-     for (i = 0; i < cars.length; i++) { 
-        //
-     }
-   ```
+     ```
+       for (i = 0; i < cars.length; i++) { 
+          //
+       }
+     ```
    
    - ```.map()```: creates a new array with the results of calling a function for every array element.
-   ```
-      var arr = [25, 64, 81, 100];
-      function myFunction() {
-        document.getElementById("example").innerHTML = arr.map(Math.sqrt);
-      }
-   ```
+     ```
+        var arr = [25, 64, 81, 100];
+        function myFunction() {
+          document.getElementById("example").innerHTML = arr.map(Math.sqrt);
+        }
+     ```
    
    - ```.filter()```: creates an array filled with all array elements that pass a test (provided as a function).
-   ```
-      var scores = [32, 63, 76, 90];
+     ```
+        var scores = [32, 63, 76, 90];
 
-      function checkScores(score) {
-          return score >= 60;
-      }
+        function checkScores(score) {
+            return score >= 60;
+        }
 
-      function myFunction() {
-          document.getElementById("example").innerHTML = scores.filter(checkScores);
-      }
-   ```
+        function myFunction() {
+            document.getElementById("example").innerHTML = scores.filter(checkScores);
+        }
+     ```
    
 6) [Hoisting](http://adripofjavascript.com/blog/drips/variable-and-function-hoisting)
    
    - Variables
-   ```
-      // Outputs: undefined
-      console.log(declaredLater);
+     ```
+        // Outputs: undefined
+        console.log(declaredLater);
 
-      var declaredLater = "Now it's defined!";
+        var declaredLater = "Now it's defined!";
 
-      // Outputs: "Now it's defined!"
-      console.log(declaredLater);
-   ```
+        // Outputs: "Now it's defined!"
+        console.log(declaredLater);
+     ```
    
    is equal to:
    
-   ```
-      var declaredLater;
+     ```
+        var declaredLater;
 
-      // Outputs: undefined
-      console.log(declaredLater);
+        // Outputs: undefined
+        console.log(declaredLater);
 
-      declaredLater = "Now it's defined!";
+        declaredLater = "Now it's defined!";
 
-      // Outputs: "Now it's defined!"
-      console.log(declaredLater);
-   ```
+        // Outputs: "Now it's defined!"
+        console.log(declaredLater);
+     ```
    
    - Functions
-   ```
-      // Outputs: "Yes!"
-      isItHoisted();
+     ```
+        // Outputs: "Yes!"
+        isItHoisted();
 
-      function isItHoisted() {
-        console.log("Yes!");
-      }
-   ```
-   is equal to:
+        function isItHoisted() {
+          console.log("Yes!");
+        }
+     ```
+     is equal to:
    
-   ```
-      function isItHoisted() {
-        console.log("Yes!");
-      }
-      // Outputs: "Yes!"
-      isItHoisted();
-   ```
+     ```
+        function isItHoisted() {
+          console.log("Yes!");
+        }
+        // Outputs: "Yes!"
+        isItHoisted();
+     ```
    
    
    Note: function definition hoisting only occurs for function declarations, not function expressions. 
-   ```    
-      // Outputs: "Definition hoisted!"
-      definitionHoisted();
+     ```    
+        // Outputs: "Definition hoisted!"
+        definitionHoisted();
 
-      // TypeError: undefined is not a function
-      definitionNotHoisted();
+        // TypeError: undefined is not a function
+        definitionNotHoisted();
 
-      function definitionHoisted() {
-        console.log("Definition hoisted!");
-      }
+        function definitionHoisted() {
+          console.log("Definition hoisted!");
+        }
 
-      var definitionNotHoisted = function () {
-        console.log("Definition not hoisted!");
-      };
-    ```
+        var definitionNotHoisted = function () {
+          console.log("Definition not hoisted!");
+        };
+      ```
     
 7) Function Declarations and Function Expressions
 
    - Function Declarations: named function variable without requiring variable assignment
    
-   ```
-      function bar() {
-        return 5;
-      }
-   ```
+     ```
+        function bar() {
+          return 5;
+        }
+     ```
    
    - Function Expressions: a function as a part of an variable assignment
    
-   ```
-      //anonymous function expression
-      var a = function () {
-        return 5;
-      }
-      //named function expression
-      var a = function bar() {
-        return 5;
-      }
-      //self invoking function expression
-      (function sayHelloWorld() {
-          alert("hello world!");
-      })();
-   ```
+     ```
+        //anonymous function expression
+        var a = function () {
+          return 5;
+        }
+        //named function expression
+        var a = function bar() {
+          return 5;
+        }
+        //self invoking function expression
+        (function sayHelloWorld() {
+            alert("hello world!");
+        })();
+     ```
 
 8) [Closure](https://www.w3schools.com/js/js_function_closures.asp): an inner function that has access to the outer (enclosing) function’s variables—scope chain
    
@@ -343,13 +346,13 @@ JavaScript and HTML DOM (to display or use the data)
    
    - access to the global variables
    
-   ```
-      function animal(petname) {
-          return function() {
-              return petname;
-          }
-      }
-   ```
+     ```
+        function animal(petname) {
+            return function() {
+                return petname;
+            }
+        }
+     ```
 9) [Promise](https://davidwalsh.name/promises) and (https://scotch.io/tutorials/javascript-promises-for-dummies)
 
    - States
@@ -369,39 +372,39 @@ JavaScript and HTML DOM (to display or use the data)
      
      c) provide resolve and reject
      
-      ``` 
-          var p = new Promise(function(resolve, reject) {
+        ``` 
+            var p = new Promise(function(resolve, reject) {
 
-              // Do an async task async task and then...
+                // Do an async task async task and then...
 
-              if(/* good condition */) {
-                        resolve('Success!');
-          }
-          else {
-                        reject('Failure!');
-          }
-          });
+                if(/* good condition */) {
+                          resolve('Success!');
+            }
+            else {
+                          reject('Failure!');
+            }
+            });
 
-          p.then(function() {
-              /* do something with the result */
-          }).catch(function() {
-              /* error :( */
-          })
-      ``` 
+            p.then(function() {
+                /* do something with the result */
+            }).catch(function() {
+                /* error :( */
+            })
+        ``` 
       
    - then: The then callback is triggered when the promise is resolved. 
-      ```  
-        new Promise(function(resolve, reject) {
-            // A mock async action using setTimeout
-            setTimeout(function() { resolve(10); }, 3000);
-        })
-        .then(function(result) {
-            console.log(result);
-        });
+        ```  
+          new Promise(function(resolve, reject) {
+              // A mock async action using setTimeout
+              setTimeout(function() { resolve(10); }, 3000);
+          })
+          .then(function(result) {
+              console.log(result);
+          });
 
-        // From the console:
-        // 10
-      ```
+          // From the console:
+          // 10
+        ```
 
 10) [HTTP Request](https://www.w3schools.com/jquery/jquery_ajax_get_post.asp): two commonly used methods for a request-response between a client and server
  
