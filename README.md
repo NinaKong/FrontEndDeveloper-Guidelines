@@ -453,26 +453,26 @@ JavaScript and HTML DOM (to display or use the data)
     
     - appends a node as the last child of a node.
 
-  ```
-    <div id="container"></div>
-  ```
-  ```
-    var target = document.getElementById("container"); 
-    //avoid to add text in a loop structure in html
-    //should add these to a document fragment, and append that fragment once finished
-    //This approach mutates the DOM only once
-    function createDiv (array) { 
-      var fragment = 		document.createDocumentFragment(); 
-      for (var i = 0; i < array.length; i++) { 
-        var div = document.createElement("div"); 
-        div.innerHTML = array[i]; 
-        fragment.appendChild(div); 
-    } 
-      target.appendChild(fragment); 
-    }
-    var example = ["Nina", "Meow", "Yehua"];
-    createDiv(example);
-  ```
+      ```
+        <div id="container"></div>
+      ```
+      ```
+        var target = document.getElementById("container"); 
+        //avoid to add text in a loop structure in html
+        //should add these to a document fragment, and append that fragment once finished
+        //This approach mutates the DOM only once
+        function createDiv (array) { 
+          var fragment = 		document.createDocumentFragment(); 
+          for (var i = 0; i < array.length; i++) { 
+            var div = document.createElement("div"); 
+            div.innerHTML = array[i]; 
+            fragment.appendChild(div); 
+        } 
+          target.appendChild(fragment); 
+        }
+        var example = ["Nina", "Meow", "Yehua"];
+        createDiv(example);
+      ```
 ## DOM
 1) Traverse DOM
    
