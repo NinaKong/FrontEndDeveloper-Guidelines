@@ -149,6 +149,7 @@ Front End Developer's Basic Guidelines
    - Disadvantages
      
      a) Increase design and development time
+     
 3) Basic Knowlege: use for widgets
    - Dropdown
      ```
@@ -401,7 +402,77 @@ JavaScript and HTML DOM (to display or use the data)
         // From the console:
         // 10
       ```
+
+10) [HTTP Request](https://www.w3schools.com/jquery/jquery_ajax_get_post.asp): two commonly used methods for a request-response between a client and server
+ 
+    - GET: requests data from a specified resource
+    - POST: submits data to be processed to a specified resource
+    
+11) [Event Caputring and Event Bubbling](https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing)
+
+    - Example
+      ```
+        <div>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+      ```
       
+      Caputring - div -> ul -> li
+      
+      Bubbling - li -> ul -> div
+    
+    - event target
+      ```
+        <div  onclick="">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+      ```
+
+      event.currentTarget - div, it is the hander runs on
+      
+      event.target - is the inside element that was clicked actually
+    
+    - use addEventListener
+    
+    - Stop Bubbling - event.stopPropagation()
+      ```
+        <div onclick="">
+          <button onclick="event.stopPropagation()">Submit</button>
+        </div> 
+      ```
+
+12) Performance: touching the DOM can be expensive when you have many nodes, use document fragments
+
+    - createDocumentFragment: creates a imaginary Node object, with all the properties and methods of the Node object.
+    
+    - createElement: creates an Element Node with the specified name.
+    
+    - appends a node as the last child of a node.
+
+  ```
+    <div id="container"></div>
+  ```
+  ```
+    var target = document.getElementById("container"); 
+    //avoid to add text in a loop structure in html
+    //should add these to a document fragment, and append that fragment once finished
+    //This approach mutates the DOM only once
+    function createDiv (array) { 
+      var fragment = 		document.createDocumentFragment(); 
+      for (var i = 0; i < array.length; i++) { 
+        var div = document.createElement("div"); 
+        div.innerHTML = array[i]; 
+        fragment.appendChild(div); 
+    } 
+      target.appendChild(fragment); 
+    }
+    var example = ["Nina", "Meow", "Yehua"];
+    createDiv(example);
+  ```
 ## DOM
 1) Traverse DOM
    
