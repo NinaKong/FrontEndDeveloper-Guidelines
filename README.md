@@ -442,7 +442,7 @@ JavaScript and HTML DOM (to display or use the data)
     - use addEventListener: attaches an event handler to the document.
       ```
       document.addEventListener("click", function(){
-          document.getElementById("demo").innerHTML = "Hello World";
+          document.getElementById("example").innerHTML = "Hello World";
       });
       ```
        - true - The event handler is executed in the capturing phase
