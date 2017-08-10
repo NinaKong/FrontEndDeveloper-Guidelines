@@ -439,7 +439,16 @@ JavaScript and HTML DOM (to display or use the data)
       
       event.target - is the inside element that was clicked actually
     
-    - use addEventListener
+    - use addEventListener: attaches an event handler to the document.
+      ```
+      document.addEventListener("click", function(){
+          document.getElementById("demo").innerHTML = "Hello World";
+      });
+      ```
+       - true - The event handler is executed in the capturing phase
+       
+       - false- Default. The event handler is executed in the bubbling phase
+       
     
     - Stop Bubbling - event.stopPropagation()
       ```
@@ -447,6 +456,8 @@ JavaScript and HTML DOM (to display or use the data)
           <button onclick="event.stopPropagation()">Submit</button>
         </div> 
       ```
+      
+   
 
 12) Performance: touching the DOM can be expensive when you have many nodes, use document fragments
 
