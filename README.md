@@ -487,6 +487,12 @@ JavaScript and HTML DOM (to display or use the data)
         var example = ["Nina", "Meow", "Yehua"];
         createDiv(example);
       ```
+      
+13) this
+    - call: calls a function with a given this value and arguments provided individually.
+    - apply: calls a function with a given this value, and arguments provided as an array (or an array-like object).
+    - bind: creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+
 ## DOM
 1) Traverse DOM
    
