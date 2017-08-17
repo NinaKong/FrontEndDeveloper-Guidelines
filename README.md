@@ -415,7 +415,7 @@ JavaScript and HTML DOM (to display or use the data)
         ```
 
 10) [HTTP Request](https://www.w3schools.com/jquery/jquery_ajax_get_post.asp): two commonly used methods for a request-response between a client and server
- 
+    - Example: A client (browser) submits an HTTP request to the server; then the server returns a response to the client. The response contains status information about the request and may also contain the requested content.
     - GET: requests data from a specified resource
     - POST: submits data to be processed to a specified resource
     
@@ -508,6 +508,8 @@ JavaScript and HTML DOM (to display or use the data)
     - ```undefined``` variables exist, but don’t have anything assigned to them
     - ```null``` variables exist and have null assigned to them
 
+15) == vs ===: if using the triple equals, the values must be equal in type as well
+    
 ## DOM
 1) Traverse DOM
    
