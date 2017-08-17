@@ -642,4 +642,12 @@ JavaScript and HTML DOM (to display or use the data)
    - Step 8. Browsers displays the html content
    - Step 9. Client interaction with server
 
-
+2) [eTag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag)
+   - The ETag HTTP response header is an identifier for a specific version of a resource.
+   - If the content has changed, etags are useful to help prevent simultaneous updates of a resource from overwriting each other.
+   - If the resource at a given URL changes, a new Etag value must be generated. Etags are therefore similar to fingerprints and might also be used for tracking purposes by some servers.
+   
+3) [Same-origin Policy](http://lucybain.com/blog/2014/same-origin-policy/)
+   - the protocol (http vs. https)
+   - the domain (subdomain.yoursite.com vs. yoursite.com vs. google.com)
+   - the port (:80 vs. :4567)
