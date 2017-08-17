@@ -139,9 +139,17 @@ Front End Developer's Basic Guidelines
    
 ## Javascript
 1) Scope: Local and Global
-2) Asynchronous JavaScript And XML (AJAX): is a way to communicate to the server without reloading the page. It uses         
-   
-   ```XMLHttpRequest``` to communicate to a server-side script to retrieve data formatted in JSON, XML, HTML, or plain text. 
+2) [Asynchronous JavaScript And XML (AJAX)](https://www.w3schools.com/xml/ajax_intro.asp): is a way to communicate to the server without reloading the page. It uses         
+   - Steps
+      - 1. An event occurs in a web page (the page is loaded, a button is clicked)
+      - 2. An XMLHttpRequest object is created by JavaScript
+      - 3. The XMLHttpRequest object sends a request to a web server
+      - 4. The server processes the request
+      - 5. The server sends a response back to the web page
+      - 6. The response is read by JavaScript
+      - 7. Proper action (like page update) is performed by JavaScript
+      
+      ```XMLHttpRequest``` to communicate to a server-side script to retrieve data formatted in JSON, XML, HTML, or plain text. 
    
    - Advantages
      
