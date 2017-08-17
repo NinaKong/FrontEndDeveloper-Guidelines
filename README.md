@@ -492,6 +492,13 @@ JavaScript and HTML DOM (to display or use the data)
     - call: calls a function with a given this value and arguments provided individually.
     - apply: calls a function with a given this value, and arguments provided as an array (or an array-like object).
     - bind: creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+    
+    Note: if know how many arguments should use ```.call```, if do not know or araguments are an array, should use ```.apply```
+    
+14) [null, undefined, and undeclared](http://lucybain.com/blog/2014/null-undefined-undeclared/)
+    - ```undeclared``` variables don’t even exist
+    - ```undefined``` variables exist, but don’t have anything assigned to them
+    - ```null``` variables exist and have null assigned to them
 
 ## DOM
 1) Traverse DOM
