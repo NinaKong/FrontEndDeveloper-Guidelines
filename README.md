@@ -139,10 +139,12 @@ Front End Developer's Basic Guidelines
 
 8) Hide Ccontent
 
-| Hide Elements | Opacity  | Visibility | Display | Position |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| Screen Reader  |  Show  |  Hide | Hide | Show |
-| Descendants | Show  | Show  | Hide | Show |
+      | Hide Elements | Opacity | Visibility | Display | Position |
+      | ------------- | ------------- | ------------- | ------------- | ------------- |
+      | Code  |  Show  |  ```opacity: 0;``` | Hide | Show |
+      | Screen Reader  |  Show  |  Hide | Hide | Show |
+      | ------------- | ------------- | ------------- | ------------- | ------------- |
+      | Descendants | Show  | Show  | Hide | Show |
 
 
 ## Javascript
