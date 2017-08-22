@@ -597,7 +597,7 @@ JavaScript and HTML DOM (to display or use the data)
    }
    ```
  
-
+5) Graceful degradation and progressive enhancement
  
 ## IE 8 
     
