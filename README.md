@@ -136,7 +136,15 @@ Front End Developer's Basic Guidelines
           @import “buttons.less”;
           @import “site.less”;
       ```
-   
+
+8) Hide Ccontent
+
+| Hide Elements | Opacity  | Visibility | Display | Position |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Screen Reader  |  Show  |  Hide | Hide | Show |
+| Descendants | Show  | Show  | Hide | Show |
+
+
 ## Javascript
 1) Scope: Local and Global
 2) [Asynchronous JavaScript And XML (AJAX)](https://www.w3schools.com/xml/ajax_intro.asp): is a way to communicate to the server without reloading the page. It uses         
