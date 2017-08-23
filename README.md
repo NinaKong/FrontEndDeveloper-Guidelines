@@ -141,9 +141,8 @@ Front End Developer's Basic Guidelines
 
       | Hide Elements | Opacity | Visibility | Display | Position |
       | ------------- | ------------- | ------------- | ------------- | ------------- |
-      | Code  |  Show  |  ```opacity: 0;``` | Hide | Show |
+      | CSS  |  ```opacity: 0;```  |  ```visibility: hidden;``` | ```display: none;``` |   |
       | Screen Reader  |  Show  |  Hide | Hide | Show |
-      | ------------- | ------------- | ------------- | ------------- | ------------- |
       | Descendants | Show  | Show  | Hide | Show |
 
 
