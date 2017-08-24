@@ -137,13 +137,38 @@ Front End Developer's Basic Guidelines
           @import “site.less”;
       ```
 
-8) Hide Ccontent
+8) Hide Content
 
       | Hide Elements | Opacity | Visibility | Display | Position |
       | ------------- | ------------- | ------------- | ------------- | ------------- |
       | CSS  |  ```opacity: 0;```  |  ```visibility: hidden;``` | ```display: none;``` |   |
       | Screen Reader  |  Show  |  Hide | Hide | Show |
       | Descendants | Show  | Show  | Hide | Show |
+
+9) [Block Formatting Context](https://www.sitepoint.com/understanding-block-formatting-contexts-in-css/)
+
+   - float is not none
+   - position is neither static nor relative
+   - display is table-cell, table-caption, inline-block, flex, or inline-flex
+   - overflow is not visible
+
+10) [Box-sizing](https://css-tricks.com/box-sizing/)
+    ```
+    html {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      -webkit-box-sizing: inherit;
+      -moz-box-sizing: inherit;
+      box-sizing: inherit;
+    }
+    ```
+    
+    - The padding and border of that element no longer increase its width
+    - Very convenient for column layouts
+    - Mix percentage and pixel values
 
 
 ## Javascript
