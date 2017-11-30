@@ -19,6 +19,7 @@ Front End Developer's Basic Guidelines
    The  ```<!DOCTYPE> ``` is not an HTML tag, it lets the web browser know the HTML version in the web page. It is the first thing in the HTML file.
 
 2）Favorite HTML5 Feature
+
     - Audio and Video
     
     - Section
@@ -26,7 +27,8 @@ Front End Developer's Basic Guidelines
     - Header and Footer
     
     - Nav
-    
+
+
 
 ## CSS
 1) Specificity  
