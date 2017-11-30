@@ -21,7 +21,7 @@ Front End Developer's Basic Guidelines
 2）Favorite HTML5 Feature
     - Audio and Video
     - Section
-    - Heeader and Footer
+    - Header and Footer
     - Nav
 
 ## CSS
