@@ -145,11 +145,12 @@ Front End Developer's Basic Guidelines
 
 8) Hide Content
 
-      | Hide Elements | Opacity | Visibility | Display | Position |
-      | ------------- | ------------- | ------------- | ------------- | ------------- |
-      | CSS  |  ```opacity: 0;```  |  ```visibility: hidden;``` | ```display: none;``` |   |
-      | Screen Reader  |  Show  |  Hide | Hide | Show |
-      | Descendants | Show  | Show  | Hide | Show |
+      | Hide Elements | Opacity | Visibility | Display |
+      | ------------- | ------------- | ------------- | ------------- | 
+      | CSS  |  ```opacity: 0;```  |  ```visibility: hidden;``` | ```display: none;``` |
+      | Screen Reader  |  Show  |  Hide | Hide |
+      | Space | Hide  | Show  | Show |
+      | Descendants | Show  | Show  | Hide |
 
 9) [Block Formatting Context](https://www.sitepoint.com/understanding-block-formatting-contexts-in-css/)
 
