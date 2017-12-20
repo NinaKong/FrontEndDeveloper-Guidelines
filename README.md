@@ -149,7 +149,7 @@ Front End Developer's Basic Guidelines
       | ------------- | ------------- | ------------- | ------------- | 
       | CSS  |  ```opacity: 0;```  |  ```visibility: hidden;``` | ```display: none;``` |
       | Screen Reader  |  Show  |  Hide | Hide |
-      | Original Space | Hide  | Show  | Show |
+      | Original Space | Show  | Show  | Hide |
       | Descendants | Show  | Show  | Hide |
 
 9) [Block Formatting Context](https://www.sitepoint.com/understanding-block-formatting-contexts-in-css/)
