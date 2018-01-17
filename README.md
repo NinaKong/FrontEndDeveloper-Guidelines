@@ -12,6 +12,7 @@ Front End Developer's Basic Guidelines
   - [Network](#network)
 
 ## HTML
+
 1) Doctype
    ```
    <!DOCTYPE html>
